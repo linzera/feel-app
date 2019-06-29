@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Provider } from "mobx-react";
+import { StatusBar } from "react-native";
 import { DefaultTheme, Provider as PaperProvider } from "react-native-paper";
 
 import Store from "../store";
@@ -11,7 +12,7 @@ const theme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    primary: "tomato",
+    primary: "#2ed573",
     accent: "yellow",
   },
 };
@@ -20,6 +21,7 @@ export default function App(props: AppProps) {
   return (
     <Provider {...Store}>
       <PaperProvider theme={theme}>
+        <StatusBar barStyle="dark-content" />
         <MainRoute />
       </PaperProvider>
     </Provider>

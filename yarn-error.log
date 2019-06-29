@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/lin/.nvm/versions/node/v10.16.0/bin/node /usr/local/Cellar/yarn/1.17.0/libexec/bin/yarn.js add @types/react-native-paper
+  /Users/lin/.nvm/versions/node/v10.16.0/bin/node /usr/local/Cellar/yarn/1.17.0/libexec/bin/yarn.js add @types/react-native-animatable
 
 PATH: 
   /Users/lin/.nvm/versions/node/v10.16.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/lin/Library/Android/sdk/emulator:/Users/lin/Library/Android/sdk/tools:/Users/lin/Library/Android/sdk/tools/bin:/Users/lin/Library/Android/sdk/platform-tools
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2freact-native-paper: Not found
+  Error: https://registry.yarnpkg.com/@types%2freact-native-animatable: Not found
       at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.17.0/libexec/lib/cli.js:66823:18)
       at Request.self.callback (/usr/local/Cellar/yarn/1.17.0/libexec/lib/cli.js:140439:22)
       at Request.emit (events.js:198:13)
@@ -45,6 +45,7 @@ npm manifest:
       "react": "16.8.3",
       "react-dom": "^16.8.6",
       "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+      "react-native-animatable": "^1.3.2",
       "react-native-paper": "^2.16.0",
       "react-native-web": "^0.11.4",
       "react-navigation": "^3.11.0"
@@ -4753,6 +4754,13 @@ Lockfile:
     version "3.0.4"
     resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
     integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+  
+  react-native-animatable@^1.3.2:
+    version "1.3.2"
+    resolved "https://registry.yarnpkg.com/react-native-animatable/-/react-native-animatable-1.3.2.tgz#4783ee1a73dc98815aef234ce6b819f80bfe7d80"
+    integrity sha512-rmah3KQ63ft8DxkzFUwJSuZeq+oSYwldoGF4DTOR5WM2WR5wiWLgBAtrAHlI3Di3by323uOR21s+MlqPcHz2Kw==
+    dependencies:
+      prop-types "^15.5.10"
   
   react-native-branch@2.2.5:
     version "2.2.5"

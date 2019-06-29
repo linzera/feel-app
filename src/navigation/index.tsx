@@ -7,14 +7,12 @@ import Phill from "../screens/Phill";
 const MainAppFlow = createBottomTabNavigator(
   {
     Home,
-    Profile,
     Phill,
+    Profile,
   },
   {
     initialRouteName: "Home",
   },
 );
 
-const AppContainer = createAppContainer(MainAppFlow);
-
-export default AppContainer;
+export default createAppContainer(MainAppFlow);

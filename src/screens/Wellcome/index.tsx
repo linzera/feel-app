@@ -1,9 +1,9 @@
 import * as React from "react";
 import { View, StyleSheet, Text } from "react-native";
 
-import { Container, Descript, Line } from './styles';
+import { Container, Descript, Line } from "./styles";
 
-import NameIntro from '../../components/NameIntro';
+import NameIntro from "../../components/NameIntro";
 
 export interface IProps {}
 
@@ -18,7 +18,7 @@ export default class Wellcome extends React.Component<IProps, IState> {
   public render() {
     return (
       <Container>
-            <NameIntro />
+        <NameIntro />
       </Container>
     );
   }

@@ -5,9 +5,11 @@ import { Avatar, Card, List, DataTable } from "react-native-paper";
 import { primaryColor } from "../../util/colors";
 import { observer, inject } from "mobx-react";
 import { IUserStore } from "../../store/UserStore";
+import { NavigationScreenProp } from "react-navigation";
 
 export interface IProps {
   userStore: IUserStore;
+  navigation: NavigationScreenProp<{}>;
 }
 
 export interface IState {
@@ -27,7 +29,9 @@ export default class Profile extends React.Component<IProps, IState> {
     };
   }
 
-  handleLogout = () => {};
+  handleLogout = () => {
+    this.props.navigation.navigate("Auth");
+  };
 
   public render() {
     console.log(this.props);

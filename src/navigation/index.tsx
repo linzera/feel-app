@@ -1,8 +1,9 @@
-import { createBottomTabNavigator, createAppContainer } from "react-navigation";
+import { createBottomTabNavigator, createAppContainer, createSwitchNavigator } from "react-navigation";
 
 import Home from "../screens/Home";
 import Profile from "../screens/Profile";
 import Phill from "../screens/Phill";
+import Wellcome from '../screens/Wellcome';
 
 const MainAppFlow = createBottomTabNavigator(
   {
@@ -15,4 +16,14 @@ const MainAppFlow = createBottomTabNavigator(
   },
 );
 
-export default createAppContainer(MainAppFlow);
+export default createAppContainer(
+  createSwitchNavigator(
+    { 
+      App: MainAppFlow,
+      Auth: Wellcome 
+    },
+    {
+      initialRouteName: "App"
+    }
+  )
+);

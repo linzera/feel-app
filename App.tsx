@@ -1,9 +1,6 @@
-import React from 'react';
-import App from './src/app;
+import React from "react";
+import Main from "./src/app";
 
 export default function App() {
-  return <App />
-  );
+  return <Main />;
 }
-
-

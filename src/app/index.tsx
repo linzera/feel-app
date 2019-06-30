@@ -21,7 +21,7 @@ export default function App(props: AppProps) {
   return (
     <Provider {...Store}>
       <PaperProvider theme={theme}>
-        <StatusBar barStyle="dark-content" />
+        <StatusBar barStyle="light-content" />
         <MainRoute />
       </PaperProvider>
     </Provider>

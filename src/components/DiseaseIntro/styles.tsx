@@ -4,10 +4,9 @@ import { StyleSheet } from "react-native";
 interface Props {
     body?: boolean
     active?: boolean
-    small?: boolean
 }
 
-export const Container = styled.KeyboardAvoidingView<Props>`
+export const Container = styled.ScrollView<Props>`
     width: 85%;
     position: absolute;
     ${props => props.active ? '' : 'left: -100%'};
@@ -31,17 +30,6 @@ export const Title = styled(Descript)`
 
 export const TextContainer = styled.View`
     width: 100%;
-`;
-
-export const SelectDate = styled.Picker<Props>`
-    width: ${props => props.small ? '25%' : '33%'};
-    height: 55px;
-    color: #fff;
-`;
-
-export const SelectDateContainer = styled.Picker<Props>`
-    width: 80%;
-    min-width: 80%;
 `;
 
 export const NameInput = styled.TextInput`

@@ -11,8 +11,8 @@ export default class Intro extends React.Component {
 
   public render() {
     return (
-        <View>
-        <Svg viewBox="0 0 413.139 413.139" width="90%" height="50%">
+        <View style={{marginBottom: '16%'}}>
+        <Svg viewBox="0 0 413.139 413.139" width="90px" height="90px">
             <G>
                 <G>
                     <G>

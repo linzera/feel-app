@@ -30,8 +30,8 @@ export default createAppContainer(
       initialRouteName: "Auth",
       transition: (
         <Transition.Together>
-          <Transition.Out type="slide-left" durationMs={500} interpolation="easeIn" />
-          <Transition.In type="fade" durationMs={500} />
+          <Transition.Out type="slide-left" durationMs={200} interpolation="easeIn" />
+          <Transition.In type="fade" durationMs={300} />
         </Transition.Together>
       ),
     },
